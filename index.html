@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-blue navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SMS API</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active-nav" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./documentation.html">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="./referral.html">Referral</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./support.html">Support</a>
+              </li> 
+              <li class="nav-item d-flex">
+                <a class="nav-link" href="./wallet.html"><div class="d-flex me-2 pointer"> <button class="btn-pay">$13.00 </button><span class="pay-add text-dark">+</span></div></a>
+                <a class="nav-link" href="./lending.html"><button class="btn-primary">Logout</button></a>
+              </li>     
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!--       
+<nav class="p-2 border-bottom bg-blue">
+    <div class="d-flex justify-content-between align-items-center container ">
+        <div class="text-light">SMS API</div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center nav-hover">
+                <a class="a-tag text-light active-nav" href="#"><p class="px-2 mb-0">Dashboard</p></a>
+                <a class="a-tag text-light" href="./documentation.html"><p class="px-2 mb-0">Documentation</p></a>
+                <a class="a-tag text-light" href="./pricing.html"><p class="px-2 mb-0">Pricing</p></a>
+                <a class="a-tag text-light" href="./referral.html"><p class="px-2 mb-0">Referral</p></a>
+                <a class="a-tag text-light" href="./support.html"><p class="px-2 mb-0">Support</p></a>
+            </div>
+            <a class="a-tag" href="./wallet.html"><div class="d-flex me-2 pointer"> <button class="btn-pay">$13.00 </button><span class="pay-add text-dark">+</span></div></a>
+            <a class="a-tag text-light" href="./lending.html"><a class="a-tag text-light" href="./lending.html"><button class="btn-primary">Logout</button></a></a>
+        </div>
+    </div>
+</nav> -->
+<section>
+    <div class="w-100 text-center pt-4 container">
+        <p class="font-38 font-bold">Choosing Option</p>
+        <div class="w-100 d-flex justify-content-center"><p class="w-75 text-center font-bold">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries</p>
+        </div>
+        <div class="row m-0">
+            <div class="col-lg-6 col-12">
+                <img class="w-100 pt-5" src="./images/vecteezy_isometric-flat-3d-illustration-concept-of-man-choosing-the_15881056 1.png" alt="">
+            </div>
+            <div class="col-lg-6 col-12">
+                <label class="input-group ps-2 mb-3">
+                    <span class="btn-pay">Service</span>
+                    <input id="service_filter" type="text" class="cstm-input">
+    
+                    <button class="btn-primary">
+                        <svg style="width: 18px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                            <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                            </svg>
+                    </button>
+                </label>
+                <div class="container mb-5 tbl-scroll border-cstm">
+                    <table >
+                        <thead>
+                          <tr>
+                            <th scope="col">Services</th>
+                            <th scope="col">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Whatsapp</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Facebook</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Tinder</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Instagram</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Craigslist</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">LinkedIn</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">DoorDash</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Ticketmaster</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">OpenAI / ChatGPT</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">Telegram</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">CrowdTap</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+                          <tr class="pointer">
+                            <td data-label="Order ID">LINE messenger</td>
+                            <td data-label="Name">$0.55</td>
+                          </tr>
+
+                         
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="py-4 d-flex flex-wrap justify-content-center">
+            <div class="d-flex me-2">
+                <p class="price-name">eBay</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Instagram</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Tinder</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Facebook</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Google Voice</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Craigslist</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">LinkedIn</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Telegram</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">OpenAI / ChatGPT</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Viber</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Yahoo</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">DoorDash</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Ticketmaster</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Fiverr</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Hinge</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">Steam</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">CrowdTap</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+            <div class="d-flex me-2">
+                <p class="price-name">LINE messenger</p>
+                <p class="price-rate">$0.10</p>
+            </div>
+        </div> -->
+    </div>
+</section>
+<section>
+    <div>
+        <p class="text-center font-38 font-bold py-3">Order History</p>
+
+        <div class="container mb-5">
+            <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Order ID">345</td>
+                    <td data-label="Name">Phone Numbers</td>
+                    <td data-label="Date">2024-03-22</td>
+                    <td data-label="Amount">$100.00</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Order ID">262</td>
+                    <td data-label="Name">SMS</td>
+                    <td data-label="Date">2024-02-12</td>
+                    <td data-label="Amount">$40.60</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Order ID">212</td>
+                    <td data-label="Name">Records</td>
+                    <td data-label="Date">2024-02-01</td>
+                    <td data-label="Amount">$60.00</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- <div class="foot-bg">
+    <div class="h-100 d-flex align-items-center container">
+        <p class="font-48 font-bold w-50 text-light">Supercharge Your SMS:  
+            Embrace the Power of our 
+            SMS API Today!</p>
+    </div>
+</div>
+<section>
+    <div class="d-flex container py-3">
+        <div class="flex-1 pt-5">
+            <p class="font-48 font-bold text-blue">Explore the world 
+                with SMS API.</p>
+            <p class="">Nation yet I century way of the into he gone day time. To pity the left didn't 
+                doubting as for recommendation up omens,</p>
+            <button class="btn-primary">Get Started</button>
+        </div>
+        <div class="flex-1 d-flex justify-content-end">
+            <img src="./images/banner-landing-10 1.png" alt="">
+        </div>
+    </div>
+</section> -->
+<footer class="bg-blue">
+    <div class="row m-0 p-4 foot">
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Product</p>
+            <ul class="text-light">
+                <li>Bulk SMS</li>
+                <li>WhatsApp Business Solution</li>
+                <li>Voice Call Service</li>
+                <li>Short Code Service</li>
+                <li>Bulk SMS Software Download</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Quick Links</p>
+            <ul class="text-light">
+                <li>Reseller Program</li>
+                <li>DLT</li>
+                <li>Developer API</li>
+                <li>Payment</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Legal</p>
+            <ul class="text-light">
+                <li><a class="a-tag text-light" href="./term.html">Terms & Conditions</a></li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Disclaimer</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Our Company</p>
+            <ul class="text-light">
+                <li>About Us </li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

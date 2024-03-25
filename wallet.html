@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-blue navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SMS API</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="./index.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./documentation.html">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pricing.html">Pricing</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link " href="./referral.html">Referral</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link " href="./support.html">Support</a>
+              </li> 
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="./wallet.html"><div class="d-flex me-2 pointer"> <button class="btn-pay">$13.00 </button><span class="pay-add text-dark">+</span></div></a>
+              </li>   -->
+              <li class="nav-item">
+                <a class="nav-link" href="./lending.html"><button class="btn-primary">Logout</button></a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section class="price-bg">
+    <div class="d-flex flex-column align-items-center h-100 justify-content-center">
+        <p class="font-48 font-bold text-light  text-center mb-4">My Wallet</p>
+        <button class="btn-primary">Get Started</button>
+    </div>
+</section>
+
+<section>
+    <div class="bg-grey container d-flex align-items-center p-5 my-5">
+        <div class="text-center flex-1 border-right pe-3">
+            <p class="font-28 font-bold text-blue mb-0">Wallet Balance</p>
+            <p class="font-28 font-bold text-blue mb-0">$13.56</p>
+        </div>
+        <div class=" flex-2 ps-3 border-bottom mx-3">
+            <span class=" ps-3 pb-2 ">Add Money</span>
+        </div>
+        <div class="flex-1">
+            <a class="a-tag text-dark" href="./addmoney.html"><p class="font-bold bg-orange mb-0 text-center p-3">ADD MONEY TO <br>
+                WALLET</p></a>
+        </div>
+    </div>
+</section>
+
+<div class="container mb-5 pb-5">
+    <p class="font-38 font-bold text-center">Payment history</p>
+    <div class="over-x"><table>
+        <thead>
+          <tr>
+            <th scope="col">Order ID</th>
+            <th scope="col">Amount Credited</th>
+            <th scope="col">Transaction Status</th>
+            <th scope="col">Date Added</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Order ID">456</td>
+            <td data-label="Amount Credited">$100.00</td>
+            <td data-label="Transaction Status">Complate</td>
+            <td data-label="Date Added">2020-06-02 <br> 01:23:22</td>
+            <td data-label="Description">Wallet Recharge</td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">456</td>
+            <td data-label="Amount Credited">$100.00</td>
+            <td data-label="Transaction Status">Complate</td>
+            <td data-label="Date Added">2020-06-02 <br> 01:23:22</td>
+            <td data-label="Description">Wallet Recharge</td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">456</td>
+            <td data-label="Amount Credited">$100.00</td>
+            <td data-label="Transaction Status">Complate</td>
+            <td data-label="Date Added">2020-06-02 <br> 01:23:22</td>
+            <td data-label="Description">Wallet Recharge</td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">456</td>
+            <td data-label="Amount Credited">$100.00</td>
+            <td data-label="Transaction Status">Complate</td>
+            <td data-label="Date Added">2020-06-02 <br> 01:23:22</td>
+            <td data-label="Description">Wallet Recharge</td>
+          </tr>
+         
+        </tbody>
+      </table></div>
+</div>
+
+<!-- <div class="container mb-5 pt-5">
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">SMS Pack</th>
+            <th scope="col">volume</th>
+            <th scope="col">price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="Order ID">25,000 SMS</td>
+            <td data-label="Amount Credited">$0.20</td>
+            <td class="d-flex align-items-center justify-content-between" data-label="Transaction Status">$150 <a class="a-tag" href="./buyplan.html"><button class="btn-primary">BUY NOW</button></a></td>
+          </tr>
+
+         
+        </tbody>
+      </table>
+</div> -->
+<div class="foot-bg">
+    <div class="h-100 d-flex align-items-center container">
+        <p class="font-48 font-bold cw-50 text-light">Supercharge Your SMS:  
+            Embrace the Power of our 
+            SMS API Today!</p>
+    </div>
+</div>
+<footer class="bg-blue">
+    <div class="row m-0 p-4 foot">
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Product</p>
+            <ul class="text-light">
+                <li>Bulk SMS</li>
+                <li>WhatsApp Business Solution</li>
+                <li>Voice Call Service</li>
+                <li>Short Code Service</li>
+                <li>Bulk SMS Software Download</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Quick Links</p>
+            <ul class="text-light">
+                <li>Reseller Program</li>
+                <li>DLT</li>
+                <li>Developer API</li>
+                <li>Payment</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Legal</p>
+            <ul class="text-light">
+                <li><a class="a-tag text-light" href="./term.html">Terms & Conditions</a></li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Disclaimer</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <p class="font-38 text-light mb-2">Our Company</p>
+            <ul class="text-light">
+                <li>About Us </li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
